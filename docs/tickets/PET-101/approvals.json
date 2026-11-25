@@ -1,0 +1,25 @@
+{
+  "fast": {
+    "at": "2026-11-25T16:57:09.436Z",
+    "note": "test-first: yes, write the failing tests before the code"
+  },
+  "functional": {
+    "at": "2026-11-25T16:57:09.436Z",
+    "note": "test-first: yes, write the failing tests before the code",
+    "via": "fast"
+  },
+  "technical": {
+    "at": "2026-11-25T16:57:09.436Z",
+    "note": "test-first: yes, write the failing tests before the code",
+    "via": "fast"
+  },
+  "go": {
+    "at": "2026-11-25T16:57:09.436Z",
+    "note": "test-first: yes, write the failing tests before the code",
+    "via": "fast"
+  },
+  "merge": {
+    "at": "2026-11-25T17:17:22.112Z",
+    "note": "fix the F3 typo in the display name next time, not now"
+  }
+}

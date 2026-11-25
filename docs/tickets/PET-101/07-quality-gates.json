@@ -1,0 +1,18 @@
+{
+  "ticket": "PET-101",
+  "at": "2026-11-25T17:15:25.049Z",
+  "passed": true,
+  "checks": [
+    {
+      "name": "build and tests",
+      "command": ".\\mvnw.cmd -B verify",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "coverage",
+      "passed": true,
+      "detail": "93.8% of lines covered (threshold 80%), from target/site/jacoco/jacoco.csv"
+    }
+  ]
+}

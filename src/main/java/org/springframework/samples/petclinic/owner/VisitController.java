@@ -100,6 +100,9 @@ class VisitController {
 		if (visit.getDate() != null && !visit.getDate().isAfter(LocalDate.now())) {
 			result.rejectValue("date", "typeMismatch.visitDate");
 		}
+		else if (visit.getDate() != null && owner.getPet(petId).hasVisitOn(visit.getDate(), visit)) {
+			result.rejectValue("date", "duplicate.visitDate");
+		}
 
 		if (result.hasErrors()) {
 			return "pets/createOrUpdateVisitForm";

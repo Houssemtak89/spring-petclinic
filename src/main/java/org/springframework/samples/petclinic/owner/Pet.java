@@ -82,4 +82,19 @@ public class Pet extends NamedEntity {
 		getVisits().add(visit);
 	}
 
+	/**
+	 * Tells whether this pet already has a visit on the given date, other than the given
+	 * one.
+	 * @param date the date to look for
+	 * @param ignored a visit to leave out of the search, typically the one being created;
+	 * may be {@code null}
+	 * @return {@code true} if another visit of this pet falls on that date
+	 */
+	public boolean hasVisitOn(LocalDate date, Visit ignored) {
+		if (date == null) {
+			return false;
+		}
+		return getVisits().stream().anyMatch(visit -> visit != ignored && date.equals(visit.getDate()));
+	}
+
 }
